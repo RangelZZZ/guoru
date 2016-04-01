@@ -56,10 +56,10 @@ function create_updated_collection(collection_a, object_b) {
 		}
 	}
 	
-      for (var m = 0; m < newArray.length; m++) {
-             for(var j = 0; j < object_b.value.length; j++){
-                 if (newArray[m].key === object_b.value[j]){
-                     newArray[m].count = newArray[m].count - parseInt(newArray[m].count/3);
+      for (var i = 0; i < newArray.length; i++) {
+      for(var j = 0; j < object_b.value.length; j++){
+        if (newArray[i].key === object_b.value[j]){
+            newArray[i].count = collection_a[i].count - parseInt(collection_a[i].count/3);
     }	
   }
   }

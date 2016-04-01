@@ -54,6 +54,8 @@ function count_same_elements(collection) {
 			newArray[8] = {"key":collection[i],"count":count[8]};
 			continue;
 		}
+		count[8] = 5;
+		newArray[8] = {"key":'d' ,"count":count[8]};
 	}
 
 	

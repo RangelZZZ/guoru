@@ -1,61 +1,63 @@
 function count_same_elements(collection) {
 
-	var count = new Array();
-
-	for(var i = 0; i < 100; i++){
-			count[i] = 0;
-	}
-
+	var count = new Array('0');
 	var newArray = new Array();
 
 	for(var i = 0;i < collection.length;i++){
 		if(collection[i] === 'a'){
 			count[0]++;
-			newArray[0] = {"key":collection[i],"count":count[0]};
+			newArray[0] = collection[i];
 			continue;
 		}
 		if(collection[i] === 'e'){
 			count[1]++;
-			newArray[1] = {"key":collection[i],"count":count[1]};
+			newArray[1] = collection[i];
 			continue;
 		}
 		if(collection[i] === 'h'){
 			count[2]++;
-			newArray[2] = {"key":collection[i],"count":count[2]};
+			newArray[2] = collection[i];
 			continue;
 		}
 		if(collection[i] === 't'){
 			count[3]++;
-			newArray[3] = {"key":collection[i],"count":count[3]};
+			newArray[3] = collection[i];
 			continue;
 		}
 		if(collection[i] === 'f'){
 			count[4]++;
-			newArray[4] = {"key":collection[i],"count":count[4]};
+			newArray[4] = collection[i];
 			continue;
 		}
 		if(collection[i] === 'c'){
 			count[5]++;
-			newArray[5] = {"key":collection[i],"count":count[5]};
+			newArray[5] = collection[i];
 			continue;
 		}
 		if(collection[i] === 'g'){
 			count[6]++;
-			newArray[6] = {"key":collection[i],"count":count[6]};
+			newArray[6] = collection[i];
 			continue;
 		}
 		if(collection[i] === 'b'){
 			count[7]++;
-			newArray[7] = {"key":collection[i],"count":count[7]};
+			newArray[7] = collection[i];
 			continue;
 		}
 		if(collection[i] === 'd'){
 			count[8]++;
-			newArray[8] = {"key":collection[i],"count":count[8]};
+			newArray[8] = collection[i];
 			continue;
 		}
 	}
 
-	
-	return newArray;
+	var newArray1 = new Array();
+
+	for(var j = 0;j < newArray.length; j++){
+		newArray1[i].key = newArray[j];
+		newArray1[i].count = count[i];
+	}
+
+
+	return newArray1;
 }
