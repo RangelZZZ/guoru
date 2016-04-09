@@ -1,13 +1,21 @@
 function create_updated_collection(collection_a, object_b) {
-  //在这里写入代码
 
-    for (var i = 0; i < collection_a.length; i++) {
-      for(var j = 0; j < object_b.value.length; j++){
-        if (collection_a[i].key === object_b.value[j]){
-            collection_a[i].count =collection_a[i].count -1;
-          }
+  for (var i = 0; i < collection_a.length; i++) {
+    var element = collection_a[i];
+    if(IsExit(element, object_b)) {
+      element.count = element.count - 1;
 
     }
-}
+  }
   return collection_a;
+}
+
+
+function IsExit(element, object_b) {
+  for (var i = 0; i < object_b.value.length; i++) {
+    if (element.key === object_b.value[i]) {
+      return true;
+    }
+  }
+  return false;
 }
